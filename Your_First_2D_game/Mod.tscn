@@ -1,6 +1,7 @@
-[gd_scene load_steps=9 format=3 uid="uid://hgm08x680chq"]
+[gd_scene load_steps=10 format=3 uid="uid://hgm08x680chq"]
 
 [ext_resource type="Texture2D" uid="uid://dachv2wh5lmtm" path="res://art/enemyFlyingAlt_1.png" id="1_k5a18"]
+[ext_resource type="Script" path="res://Mod.gd" id="1_qy5hg"]
 [ext_resource type="Texture2D" uid="uid://dhoo80kdn32cl" path="res://art/enemyFlyingAlt_2.png" id="2_1btyt"]
 [ext_resource type="Texture2D" uid="uid://bw6ff5gi0peny" path="res://art/enemySwimming_1.png" id="3_ra30t"]
 [ext_resource type="Texture2D" uid="uid://bi12p6kcyqggn" path="res://art/enemySwimming_2.png" id="4_4thla"]
@@ -50,6 +51,7 @@ height = 92.0
 [node name="RigidBody2D" type="RigidBody2D"]
 collision_mask = 0
 gravity_scale = 0.0
+script = ExtResource("1_qy5hg")
 metadata/_edit_group_ = true
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
@@ -62,3 +64,5 @@ rotation = 1.5708
 shape = SubResource("CapsuleShape2D_r8rmf")
 
 [node name="VisibleOnScreenEnabler2D" type="VisibleOnScreenEnabler2D" parent="."]
+
+[connection signal="screen_exited" from="VisibleOnScreenEnabler2D" to="." method="_on_visible_on_screen_enabler_2d_screen_exited"]
