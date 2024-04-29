@@ -4,7 +4,7 @@ extends Node
 var score
 
 func _ready():
-	new_game() 
+	pass
 
 
 
