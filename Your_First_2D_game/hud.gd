@@ -2,14 +2,6 @@ extends CanvasLayer
 
 signal start_game
 
-# Called when the node enters the scene tree for the first time.
-func _ready():
-	pass 
-
-
-func _process(delta):
-	pass
-
 func show_message(text):
 	$Message.text = text
 	$Message.show()
@@ -21,7 +13,7 @@ func show_game_over():
 	
 	await $MessageTimer.timeout
 	
-	$Message.text = "Dodge the Creeps!"
+	$Message.text = "Dodge the \n Creeps!"
 	$Message.show()
 	
 	await get_tree().create_timer(1.0).timeout

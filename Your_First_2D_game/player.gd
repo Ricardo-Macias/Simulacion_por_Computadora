@@ -44,6 +44,7 @@ func _on_body_entered(body):
 	hit.emit()
 	
 	$CollisionShape2D.set_deferred("disabled", true)
+	hide()
 
 func start(pos):
 	position = pos
