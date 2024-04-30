@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://s48upuh5vbei"
-path="res://.godot/imported/enemyWalking_2.png-67c480ed60c35e95f5acb0436246b935.ctex"
+uid="uid://cmclgjnxj8vb8"
+path="res://.godot/imported/DinoSprites_10.png-7ad10400b13947646f25425b86f82e25.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://art/enemyWalking_2.png"
-dest_files=["res://.godot/imported/enemyWalking_2.png-67c480ed60c35e95f5acb0436246b935.ctex"]
+source_file="res://art/DinoSprites_10.png"
+dest_files=["res://.godot/imported/DinoSprites_10.png-7ad10400b13947646f25425b86f82e25.ctex"]
 
 [params]
 

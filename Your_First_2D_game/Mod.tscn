@@ -1,65 +1,59 @@
 [gd_scene load_steps=10 format=3 uid="uid://hgm08x680chq"]
 
-[ext_resource type="Texture2D" uid="uid://dachv2wh5lmtm" path="res://art/enemyFlyingAlt_1.png" id="1_k5a18"]
 [ext_resource type="Script" path="res://Mod.gd" id="1_qy5hg"]
-[ext_resource type="Texture2D" uid="uid://dhoo80kdn32cl" path="res://art/enemyFlyingAlt_2.png" id="2_1btyt"]
-[ext_resource type="Texture2D" uid="uid://bw6ff5gi0peny" path="res://art/enemySwimming_1.png" id="3_ra30t"]
-[ext_resource type="Texture2D" uid="uid://bi12p6kcyqggn" path="res://art/enemySwimming_2.png" id="4_4thla"]
-[ext_resource type="Texture2D" uid="uid://bpv4euxa6xdjv" path="res://art/enemyWalking_1.png" id="5_lfr3l"]
-[ext_resource type="Texture2D" uid="uid://s48upuh5vbei" path="res://art/enemyWalking_2.png" id="6_hv8w4"]
+[ext_resource type="Texture2D" uid="uid://b3lfk22g1omqx" path="res://art/Fireball_0.png" id="2_xnkan"]
+[ext_resource type="Texture2D" uid="uid://dixmjc8gm0gel" path="res://art/Fireball_1.png" id="3_fb11f"]
+[ext_resource type="Texture2D" uid="uid://c70tsxvdcviyq" path="res://art/Fireball_3.png" id="4_vx2my"]
+[ext_resource type="Texture2D" uid="uid://dgau2h5e35yoc" path="res://art/Fireball_4.png" id="5_8xlth"]
+[ext_resource type="Texture2D" uid="uid://q7ub7rnm5ga3" path="res://art/Fireball_5.png" id="6_oqe11"]
+[ext_resource type="Texture2D" uid="uid://dmnb17cxog70i" path="res://art/Fireball_6.png" id="7_fbkgj"]
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_cd4o7"]
 animations = [{
 "frames": [{
 "duration": 1.0,
-"texture": ExtResource("1_k5a18")
+"texture": ExtResource("2_xnkan")
 }, {
 "duration": 1.0,
-"texture": ExtResource("2_1btyt")
+"texture": ExtResource("3_fb11f")
+}, {
+"duration": 1.0,
+"texture": ExtResource("4_vx2my")
+}, {
+"duration": 1.0,
+"texture": ExtResource("5_8xlth")
+}, {
+"duration": 1.0,
+"texture": ExtResource("6_oqe11")
+}, {
+"duration": 1.0,
+"texture": ExtResource("7_fbkgj")
 }],
 "loop": true,
-"name": &"fly",
-"speed": 3.0
-}, {
-"frames": [{
-"duration": 1.0,
-"texture": ExtResource("3_ra30t")
-}, {
-"duration": 1.0,
-"texture": ExtResource("4_4thla")
-}],
-"loop": true,
-"name": &"swim",
-"speed": 3.0
-}, {
-"frames": [{
-"duration": 1.0,
-"texture": ExtResource("5_lfr3l")
-}, {
-"duration": 1.0,
-"texture": ExtResource("6_hv8w4")
-}],
-"loop": true,
-"name": &"walk",
+"name": &"fireball",
 "speed": 3.0
 }]
 
 [sub_resource type="CapsuleShape2D" id="CapsuleShape2D_r8rmf"]
-radius = 31.0
-height = 92.0
+radius = 6.99976
+height = 108.0
 
 [node name="RigidBody2D" type="RigidBody2D" groups=["mobs"]]
+position = Vector2(-14, -11)
 collision_mask = 0
 gravity_scale = 0.0
 script = ExtResource("1_qy5hg")
 metadata/_edit_group_ = true
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
-scale = Vector2(0.75, 0.75)
+position = Vector2(11.1875, 5.4375)
+rotation = 3.14159
+scale = Vector2(2.212, 2)
 sprite_frames = SubResource("SpriteFrames_cd4o7")
-animation = &"swim"
+animation = &"fireball"
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(8, 4)
 rotation = 1.5708
 shape = SubResource("CapsuleShape2D_r8rmf")
 

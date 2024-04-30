@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://e1dy3j8t202n"
-path="res://.godot/imported/playerGrey_walk2.png-34d2d916366100182d08037c51884043.ctex"
+uid="uid://c70tsxvdcviyq"
+path="res://.godot/imported/Fireball_3.png-ae3868c2ab28f53948a8d614c9b8c04e.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://art/playerGrey_walk2.png"
-dest_files=["res://.godot/imported/playerGrey_walk2.png-34d2d916366100182d08037c51884043.ctex"]
+source_file="res://art/Fireball_3.png"
+dest_files=["res://.godot/imported/Fireball_3.png-ae3868c2ab28f53948a8d614c9b8c04e.ctex"]
 
 [params]
 

@@ -1,9 +1,11 @@
-[gd_scene load_steps=6 format=3 uid="uid://bcduwbvlm38te"]
+[gd_scene load_steps=8 format=3 uid="uid://bcduwbvlm38te"]
 
 [ext_resource type="Script" path="res://main.gd" id="1_1a2v5"]
 [ext_resource type="PackedScene" uid="uid://kfwpgdx30cqu" path="res://player.tscn" id="1_q27cr"]
 [ext_resource type="PackedScene" uid="uid://hgm08x680chq" path="res://Mod.tscn" id="2_ynqnl"]
 [ext_resource type="PackedScene" uid="uid://m5g6le3y50ay" path="res://hud.tscn" id="4_84rao"]
+[ext_resource type="AudioStream" uid="uid://bmkglmsbnucu5" path="res://Music/musica-de-super-mario-bros.mp3" id="5_6qvry"]
+[ext_resource type="AudioStream" uid="uid://bybqdeitysbgc" path="res://Music/DeathSound.mp3" id="6_vis27"]
 
 [sub_resource type="Curve2D" id="Curve2D_wr0bp"]
 _data = {
@@ -14,6 +16,12 @@ point_count = 5
 [node name="Main" type="Node"]
 script = ExtResource("1_1a2v5")
 mob_scene = ExtResource("2_ynqnl")
+
+[node name="Deathsound" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("6_vis27")
+
+[node name="Music" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("5_6qvry")
 
 [node name="ColorRect" type="ColorRect" parent="."]
 anchors_preset = 15

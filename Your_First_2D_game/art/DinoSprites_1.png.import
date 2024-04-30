@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://bi12p6kcyqggn"
-path="res://.godot/imported/enemySwimming_2.png-4c0cbc0732264c4ea3290340bd4a0a62.ctex"
+uid="uid://6djksfgs3teh"
+path="res://.godot/imported/DinoSprites_1.png-09e474583207a4323e6ed906e0b5c9f0.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://art/enemySwimming_2.png"
-dest_files=["res://.godot/imported/enemySwimming_2.png-4c0cbc0732264c4ea3290340bd4a0a62.ctex"]
+source_file="res://art/DinoSprites_1.png"
+dest_files=["res://.godot/imported/DinoSprites_1.png-09e474583207a4323e6ed906e0b5c9f0.ctex"]
 
 [params]
 

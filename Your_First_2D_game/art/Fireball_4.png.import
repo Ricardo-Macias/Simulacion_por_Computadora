@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://dachv2wh5lmtm"
-path="res://.godot/imported/enemyFlyingAlt_1.png-559f599b16c69b112c1b53f6332e9489.ctex"
+uid="uid://dgau2h5e35yoc"
+path="res://.godot/imported/Fireball_4.png-b7913d3ef8844af20685c2c22acb1dc4.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://art/enemyFlyingAlt_1.png"
-dest_files=["res://.godot/imported/enemyFlyingAlt_1.png-559f599b16c69b112c1b53f6332e9489.ctex"]
+source_file="res://art/Fireball_4.png"
+dest_files=["res://.godot/imported/Fireball_4.png-b7913d3ef8844af20685c2c22acb1dc4.ctex"]
 
 [params]
 

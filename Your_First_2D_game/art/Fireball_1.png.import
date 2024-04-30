@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://bnwpfwvblrw8u"
-path="res://.godot/imported/playerGrey_up1.png-6bd114d0a6beac91f48e3a7314d44564.ctex"
+uid="uid://dixmjc8gm0gel"
+path="res://.godot/imported/Fireball_1.png-179eef22307db3e6727c1be92da47d8b.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://art/playerGrey_up1.png"
-dest_files=["res://.godot/imported/playerGrey_up1.png-6bd114d0a6beac91f48e3a7314d44564.ctex"]
+source_file="res://art/Fireball_1.png"
+dest_files=["res://.godot/imported/Fireball_1.png-179eef22307db3e6727c1be92da47d8b.ctex"]
 
 [params]
 
